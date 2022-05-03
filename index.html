@@ -44,7 +44,7 @@ title: Sohail Turner
 <!-- body -->
 
 <body id="main-layout">
-	<header>
+	<div id="navbar" >
 		<nav id="nav-wrap">
 			<a id="toggle btn" title="Menu" href="#">
 			</a>
@@ -59,7 +59,7 @@ title: Sohail Turner
 		<!-- end loader -->
 		<!-- header -->
 		<!-- header inner -->
-	</header>
+	</div>
 	<!-- end header inner -->
 	<!-- end header -->
 	<!-- banner -->
@@ -366,5 +366,25 @@ title: Sohail Turner
 </body>
 </html>
 
+<script>
+	window.onscroll = function () {
+		myFunction();
+	}
 
+		
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+		if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		}
+
+		else {
+			navbar.classList.remove("sticky");
+		}
+
+	}
+</script>
 

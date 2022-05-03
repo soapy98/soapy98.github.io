@@ -185,9 +185,7 @@ img {
     box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
 }
 
-.navbar-form input {
-    border: none !important;
-}
+
 
 .badge {
     font-weight: 500;
@@ -271,46 +269,44 @@ button {
 
 /*-- navigation--*/
 
-.navigation.navbar {
-    float: right;
-    padding: 0px;
-    padding-top: 5px;
+#navbar {
+    overflow:hidden;
+    background-color: white;
 }
 
-nav ul, footer ul {
-    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-
-    nav ul li, footer ul li {
-        display: inline;
-        margin-right: 20px;
+    #navbar a {
+        overflow: hidden;
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 17px;
+        font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+        text-decoration: none;
+        list-style: none;
+        font-weight: bold;
     }
 
-.navigation.navbar-dark .navbar-nav .nav-link {
-    padding: 8px 25px;
-    color: #fff;
-    font-size: 16px;
-    line-height: 20px;
+        #navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        #navbar a.active {
+            background-color: white;
+            color: black;
+        }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-    .navigation.navbar-dark .navbar-nav .nav-link:focus,
-    .navigation.navbar-dark .navbar-nav .nav-link:hover {
-        color: #fbd10f;
+    .sticky + .content {
+        padding-top: 60px;
     }
-
-    .navigation.navbar-dark .navbar-nav .active > .nav-link,
-    .navigation.navbar-dark .navbar-nav .nav-link.active,
-    .navigation.navbar-dark .navbar-nav .nav-link.show,
-    .navigation.navbar-dark .navbar-nav .show > .nav-link {
-        color: #bb4f42;
-    }
-
-.navbar-expand-md .navbar-nav {
-    padding-right: 10px;
-}
 
 .login_btn {
     background: #d5ba08;

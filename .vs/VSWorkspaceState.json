@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\about",
+    "\\css",
+    "\\cv",
     "\\media",
     "\\_layouts"
   ],
-  "SelectedNode": "\\media\\C++GraphicsVirtual.PNG",
+  "SelectedNode": "\\css\\style.css",
   "PreviewInSolutionExplorer": false
 }
