@@ -1,8 +1,7 @@
+<!DOCTYPE html>
+<html lang="en">
 <div class="container">
     <h1>Contact Me</h1>
-    <?php
-echo "Hello World!";
-?>
     <form action="action_page.php">
 
         <label for="fname">First Name</label>
@@ -23,15 +22,15 @@ echo "Hello World!";
 </div>
 <?php
 if($_POST["submit"]) {
-    $recipient="yourmailid@domain.com"; //Enter your mail address
+    $recipient="sohailturner@gmail.com"; //Enter your mail address
     $subject="Contact from Website"; //Subject 
-    $sender=$_POST["name"];
+    $sender=$_POST["fname"];
     $senderEmail=$_POST["email"];
-    $message=$_POST["comments"];
+    $message=$_POST["subject"];
     $mailBody="Name: $sender\nEmail Address: $senderEmail\n\nMessage: $message";
     mail($recipient, $subject, $mailBody);
     sleep(1);
-    header("Location:mailto:sohailturner@gmail.com/"); // Set here redirect page or destination page
+    header("Location:index.html"); // Set here redirect page or destination page
 }
 ?>
 <style>
@@ -100,3 +99,5 @@ if($_POST["submit"]) {
         padding: 20px;
     }
 </style>
+
+</html>
