@@ -19,6 +19,8 @@
     <!-- style css -->
     <!-- Responsive-->
     <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/style.css">
+
     <!-- fevicon -->
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
@@ -32,41 +34,91 @@
 
 </head>
 
-<body>
-    <ul id="nav" class="nav mobile">
-        <li><a href="../index.html">HOME</a></li>
-        <li><a href="../projects/Main.html">PORFOLIO</a></li>
-        <li><a href="../contact/index.html">CONTACT ME</a></li>
-        <li><a href="../media/Sohail CV.pdf">CV</a></li>
-    </ul>
-    <h1>Real Time Graphics</h1>
-    <h1>C++ Programming and Design</h1>
-    <a href="https://github.com/soapy98/VirtualGalleryACW/"><img src="../media/Github.png">
-    </a>
-    <div class="classified_box">
-        <figure><img src="../media/C++GraphicsVirtual.PNG" alt="GitHub Icon3.jpg" /></figure>
-        <h3 href="location: 'https://github.com/soapy98/MSC-Disseratation-Project'">C++ Programming and Design/Real Time
-            graphics - Create a virutal gallery where
-            models have various graphical effects applied onto them. </h3>
-        <p>The aim of the project was the implement a Virtual Gallery. In this it required a
-            well designed and robust application such that the various rendering techniques would run
-            smoothly.
-            We had to also utilise Parasoft, which is a software which goes through code and
-            informs you of bad practises.
-            Some of the rendering techniques are:
-            <br>1. Gouraud shading
-            <br>2. Phong shading
-            <br>3. Bump mapping
-            <br>4. Displacement mapping
-            <br>5. Toon shading
-            <br>6. Transparency
-            <br>7. Environment mapping of the room
-            <br>8. Glowing using a post-processing technique
-        </p>
-
+<body id="main-layout">
+    <div id="navbar">
+        <nav id="nav-wrap">
+            <a id="toggle btn" title="Menu" href="#">
+            </a>
+            <ul id="nav" class="nav mobile">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../contact/index.html">CONTACT ME</a></li>
+                <li><a href="../projects/Main.html">PORTFOILIO</a></li>
+                <li><a href="../media/Sohail CV.pdf">CV</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <div class="title">
+            <div class="centered">
+                <h1>Real Time Graphics C++ Programming and Design</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="codeview">
+            <div>
+                <a href="https://github.com/soapy98/WorkingGenesis/"><img src="../media/Github.png"></a>
+            </div>
+            <div>
+                <p>View Code</p>
+            </div>
+        </div>
+        <div class="info">
+            <br>
+            <p>The aim of the project was the implement a Virtual Gallery in which models had various graphical effects applied onto them. In this it required a
+                well designed and robust application such that the various rendering techniques would run
+                smoothly.
+                We had to also utilise Parasoft, which is a software which goes through code and
+                informs you of bad practises.
+                Some of the rendering techniques are:
+                <br>1. Gouraud shading
+                <br>2. Phong shading
+                <br>3. Bump mapping
+                <br>4. Displacement mapping
+                <br>5. Toon shading
+                <br>6. Transparency
+                <br>7. Environment mapping of the room
+                <br>8. Glowing using a post-processing technique
+            </p>
+            <img src="../media/C++GraphicsVirtual.PNG" alt="GitHub Icon3.jpg">
+        </div>
     </div>
 
-
 </body>
+<style>
+    .info,
+    .info p {
+        text-align: center;
+        font-size: 20px;
+
+    }
+
+    .title,
+    h1 {
+        background-image: url("../media/C++GraphicsVirtual.PNG");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        color: white;
+        padding: 1em;
+        height: 5%;
+        font-size: 50px;
+    }
+
+    .codeview img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #555;
+        text-align: center;
+    }
+
+    .codeview p {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 30px;
+
+    }
+</style>
 
 </html>

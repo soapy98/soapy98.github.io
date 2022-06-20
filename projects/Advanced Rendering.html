@@ -19,6 +19,7 @@
     <!-- style css -->
     <!-- Responsive-->
     <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- fevicon -->
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
@@ -31,34 +32,89 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 
-<body>
-    <ul id="nav" class="nav mobile">
-        <li><a href="../index.html">HOME</a></li>
-        <li><a href="../projects/Main.html">PORFOLIO</a></li>
-        <li><a href="../contact/index.html">CONTACT ME</a></li>
-        <li><a href="../media/Sohail CV.pdf">CV</a></li>
-    </ul>
-    <h1>Advanced Rendering - Genesis Animation</h1>
-    <a href="https://github.com/soapy98/WorkingGenesis/"><img src="../media/Github.png">
-    </a>
-    <div class="classified_box">
-        <p>The aim of the assignment was to develop my HLSL through practical experience of programming
-            graphics effects in HLSL targeting graphics hardware supporting shader model 5 profile. The
-            outcome was to develop a app through writing a number of shaders in HLSL to create a virutal
-            world that animates genesis. Each graphics object had to be properly modelled, illuminated,
-            and realistically animated for dynamic objects alongside all the objects needing to be
-            carefully coordinated to provide a visually appealing graphics scene.</p>
-
-        <div class="col-xl-4 col-lg-4 col-md-4 margin_bott">
-            <figure><img src="../media/RayTraceSphere.PNG" alt="GitHub Icon3.jpg" /></figure>
-            <figure><img src="../media/Advanced.png" alt="GitHub Icon3.jpg" /></figure>
-
-            <figure><img src="../media/RayMarch Terrain.png" alt="GitHub Icon3.jpg" /></figure>
-        </div>
-
+<body id="main-layout">
+    <div id="navbar">
+        <nav id="nav-wrap">
+            <a id="toggle btn" title="Menu" href="#">
+            </a>
+            <ul id="nav" class="nav mobile">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../contact/index.html">CONTACT ME</a></li>
+                <li><a href="../projects/Main.html">PORTFOILIO</a></li>
+                <li><a href="../media/Sohail CV.pdf">CV</a></li>
+            </ul>
+        </nav>
     </div>
+    <div>
+        <div class="title">
+            <div class="centered">
+                <h1>Advanced Rendering - Genesis Animation</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="codeview">
+            <div>
+                <a href="https://github.com/soapy98/WorkingGenesis/"><img src="../media/Github.png"></a>
+            </div>
+            <div>
+                <p>View Code</p>
+            </div>
+        </div>
+        <div class="info">
+            <br>
+            <p>The aim of the assignment was to develop my HLSL through practical experience of programming
+                graphics effects in HLSL targeting graphics hardware supporting shader model 5 profile. The
+                outcome was to develop a app through writing a number of shaders in HLSL to create a virutal
+                world that animates genesis. Each graphics object had to be properly modelled, illuminated,
+                and realistically animated for dynamic objects alongside all the objects needing to be
+                carefully coordinated to provide a visually appealing graphics scene.</p>
+            <br>
+            <div class="row">
+                <div class="column">
+                    <img src="../media/RayMarch Terrain.png" style="width:400px;height: 300px;">
+                </div>
+                <div class="column">
+                    <img src="../media/RayTraceSphere.PNG" style="width:400px; height: 300px;">
+                </div>
+            </div>
 
-
+        </div>
+    </div>
 </body>
+<style>
+    .info, .info p
+    {
+        text-align: center;
+        font-size: 20px;
+
+    }
+    .title,
+    h1 {
+        background-image: url("../media/Advanced.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        color: white;
+        padding: 1em;
+        height: 5%;
+        font-size: 50px;
+    }
+
+    .codeview img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #555;
+        text-align: center;
+    }
+
+    .codeview p {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 30px;
+
+    }
+</style>
 
 </html>
