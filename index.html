@@ -56,7 +56,7 @@ title: Sohail Turner
 				<li><a href="#education">EDUCATION</a></li>
 				<li><a href="#projects">PORTFOILIO </a></li>
 				<li><a href="contact/index.html">CONTACT ME</a></li>
-				<li><a href="media/Sohail CV.pdf">CV</a></li>
+				<li><a target="_blank" href="media/Sohail CV.pdf">CV</a></li>
 
 			</ul>
 		</nav>
@@ -74,7 +74,7 @@ title: Sohail Turner
 					<div class="text-bg">
 						<h1>Sohail Turner</h1>
 
-						<strong>Computer Scientist/ Game Developer</strong>
+						<strong>Software Developer/ Game Developer</strong>
 					</div>
 				</div>
 				<div class="col-xl-6 col-lg-6 col-md-6 padding_lert2">
@@ -168,21 +168,37 @@ title: Sohail Turner
 			<div class="col">
 				<div class="titlepage">
 					<h2>Portfolio</h2>
-					<strong><a onclick="location.href='projects/Main.html'">Click to view portfolio</a>
-					</strong>
+					<button onclick="location.href='projects/Main.html'">Click to view portfolio</button>
 				</div>
 			</div>
-			<div class="col">
-				<div>
-					<figure><img src="media/CA with Flood fill and Marching Squares.PNG" alt="GitHub Icon3.jpg"
-							style="width: auto; max-width:100%" />
-					</figure>
+			<div class="row">
+				<div class="column">
+					<img src="media/CA with Flood fill and Marching Squares.PNG" style="width: auto; max-width:100%">
 				</div>
-				<div>
-					<figure><img src="media/RayTraceSphere.png" alt="GitHub Icon3.jpg"
-							style="width: auto; max-width:100%" /></figure>
+				<div class="column">
+					<img src="media/RayTraceSphere.png" style="width: auto; max-width:100%">
 				</div>
-				<figure><img style="width: 300%;" src="media/C++GraphicsVirtual.PNG" alt="GitHub Icon3.jpg" /></figure>
+				<div class="column">
+					<img style="width: auto; max-width:100%" src="media/C++GraphicsVirtual.PNG">
+				</div>
+				<style>
+					* {
+						box-sizing: border-box;
+					}
+
+					.column {
+						float: left;
+						height: 50%;
+						padding: 5px;
+					}
+
+					/* Clearfix (clear floats) */
+					.row::after {
+						content: "";
+						clear: both;
+						display: table;
+					}
+				</style>
 			</div>
 		</div>
 	</section>
@@ -246,10 +262,10 @@ title: Sohail Turner
 					<div class="row">
 						<div class="col-md-12">
 							<p>
-								<a href="mailto:sohailturner@gmail.com">sohailturner@gmail.com</a></li>
-								<a href="https://github.com/soapy98"><img src="media/GitHub-Mark.png" alt="GitHub Icon"
+								<a target="_blank" href="mailto:sohailturner@gmail.com">sohailturner@gmail.com</a></li>
+								<a target="_blank" href="https://github.com/soapy98"><img src="media/GitHub-Mark.png" alt="GitHub Icon"
 										style="width:50px;height:50px;"></a>
-								<a href="https://https://www.linkedin.com/in/sohail-turner/"><img src="media/linkin.png"
+								<a target="_blank"href="https://https://www.linkedin.com/in/sohail-turner/"><img src="media/linkin.png"
 										alt="Sohail LinkedIn" style="width:50px;height:50px;"></a>
 							</p>
 						</div>
