@@ -61,13 +61,34 @@
             </div>
         </div>
         <div class="info">
-            <br>
-            <p>The aim of the assignment was to develop my HLSL through practical experience of programming
-                graphics effects in HLSL targeting graphics hardware supporting shader model 5 profile. The
-                outcome was to develop a app through writing a number of shaders in HLSL to create a virutal
-                world that animates genesis. Each graphics object had to be properly modelled, illuminated,
+            <h2>Description:</h2>
+            <p>
+                Project completed in the second semester worth 50% of a single module, Advanced Rendering and Virtual
+                Environments.
+                Using the basic UWP framework for DirectX 11 I had to create an Alien Planet with effects primarily made
+                completely with HLSL and HLSL targeting graphics hardware supporting shader model 5 profile. The
+                objective was to implement a variety of techniques explicitly and
+                implicitly using tessellation shaders and ray marching/ray tracing to achieve different graphical
+                effects in HLSL to provide a visually appealing graphical scene. Each graphics object had to be properly
+                modelled, illuminated,
                 and realistically animated for dynamic objects alongside all the objects needing to be
                 carefully coordinated to provide a visually appealing graphics scene.</p>
+            </p>
+
+            <h2>Features</h2>
+            <p>
+                1. Procedural generated terrain surface using tessellation and noise based displacement
+                <br> 2. Ray Marching: Implicit Geometric Primitives using Sign Distance Functions
+                <br> 3. Ray Marching: Implicit Complex Geometric Objects created with Smooth Blending Functions
+                <br> 4. Ray Marching: Infinite Implicit Geometric Object
+                <br> 5. Ray Marching: Geometric Objects created with 3D Fractal Functions (Mandelbulb and Tetrahedron
+                Sierpinski)
+                <br> 6. Ray Tracing: Implicit Spheres with reflective surfaces and shadows
+                <br> 7. Explicitly made torus and ellipsoid from a single point using tessellation and parametric
+                equations
+                <br> 8. Key Controlled and View Distance Controlled Spherical Tessellation with Displacement Mapping
+                <br> 9. Explicit Freeform Geometric Object using Bezier Splines with tessellation shaders
+            </p>
             <br>
             <div class="row">
                 <div class="column">
@@ -82,12 +103,13 @@
     </div>
 </body>
 <style>
-    .info, .info p
-    {
-        text-align: center;
+    .info,
+    .info p {
+        text-align: left;
         font-size: 20px;
-
+        padding-left: 10px;
     }
+
     .title,
     h1 {
         background-image: url("../media/Advanced.png");
