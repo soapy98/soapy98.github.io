@@ -312,12 +312,6 @@ button {
     background-position: center;
 }
 
-.text-bg {
-    text-align: left;
-    text-align: left;
-    max-width: 542px;
-    width: 100%;
-}
 
 .text-bg h1 {
     color: #ffe25b;
@@ -337,20 +331,13 @@ button {
     display: block;
 }
 
-.text-bg strong {
+.text-bg strong ,.text-bg h2{
     color: #fff;
     font-size: 60px;
     line-height: 65px;
     font-weight: 600;
     padding-bottom: 30px;
     display: block;
-}
-
-.text-bg p {
-    color: #fff;
-    font-size: 17px;
-    line-height: 28px;
-    padding-bottom: 60px;
 }
 
 
