@@ -4,48 +4,68 @@
 <head>
     <!-- basic -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- mobile metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <!-- site metas -->
-    <title>Portfolio</title>
-    <link rel="shortcut icon" href="../media/me.jpg">
-    <meta name="keywords" content="">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <!-- style css -->
-    <!-- Responsive-->
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <meta name="keywords" content="">
 
-    <!-- fevicon -->
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
-    <!-- Tweaks for older IEs-->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
-        media="screen">
-    <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="../assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=Homemade+Apple&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="../assets/css/libs.bundle.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../assets/css/theme.bundle.css" />
 </head>
 
 <body id="main-layout">
     <div id="navbar">
-        <nav id="nav-wrap">
-            <a id="toggle btn" title="Menu" href="#">
-            </a>
-            <ul id="nav" class="nav mobile">
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="../contact/index.html">CONTACT ME</a></li>
-                <li><a href="../projects/Main.html">PORTFOILIO</a></li>
-                <li><a target="_blank" href="../media/Sohail CV.pdf">CV</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent border-bottom">
+            <div class="container" data-aos="fade-down" data-aos-delay="100" data-aos-duration="400">
+                <a class="navbar-brand me-10" href="#">
+                    <div class="f-w-10">
+                        <svg viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g transform="translate(0.000000, 12.000000)" class="text-primary">
+                                <polygon fill="currentColor"
+                                    points="0.00246419545 0 0 27 3.71518534 23.2096589 3.71518534 4.62584189 3.71518534 3.78782706 4.53658382 3.78782706 8.46314238 3.78782706 9.28426706 3.78782706 9.28426706 4.62584189 9.28426706 17.527639 13 13.7372979 13 0">
+                                </polygon>
+                                <polygon fill="currentColor"
+                                    points="17.2245953 15 13.4449458 18.7154591 24.3875464 18.7154591 25.2231358 18.7154591 25.2231358 19.5368576 25.2231358 23.4631424 25.2231358 24.2845409 24.3875464 24.2845409 7.7796495 24.2845409 4 28 29 27.9975358 29 15">
+                                </polygon>
+                            </g>
+                            <g transform="translate(20.000000, 0.000000)" class="text-danger">
+                                <polygon fill="currentColor"
+                                    points="16.1170347 6.88274433 16.1170347 15.2581781 16.1170347 16.1172557 15.2579716 16.1172557 6.88296528 16.1172557 3 20 20 20 20 3">
+                                </polygon>
+                                <polygon fill="currentColor"
+                                    points="0 0 0 18 3.68328127 14.3167187 3.68328127 4.49789488 3.68328127 3.68300964 4.49816651 3.68300964 14.3167187 3.68300964 18 0">
+                                </polygon>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
+                <button class="border-0 bg-transparent btn-open-slideout btn-toggle-slideout">
+                    <span class="f-w-10 f-h-1 bg-white d-block mb-2"></span>
+                    <span class="f-w-10 f-h-1 bg-white d-block mb-2"></span>
+                    <span class="f-w-10 f-h-1 bg-white d-block"></span>
+                </button>
+            </div>
+        </nav> <!-- / Navbar--> 
     </div>
     <h1>AI</h1>
     <hr>
@@ -57,7 +77,59 @@
         <h3 href="location: 'https://github.com/soapy98/MSC-Disseratation-Project'">C++ Programming and Design/Real Time
 
     </div>
+    <div class="slideout text-dark">
 
+        <!-- slideout Backdrop-->
+        <div class="slideout-bg"></div>
+        <!-- slideout Backdrop-->
+
+        <!-- Slideout Bg Image-->
+        <div class="slideout-img">
+        </div>
+        <!-- Slideout Bg Image-->
+
+        <!-- Slideout Body-->
+        <div class="slideout-body">
+
+            <!-- Close Btn-->
+            <button class="btn-close-slideout btn-toggle-slideout"><i class="ri-close-circle-line ri-2x"></i></button>
+            <!-- Close Btn-->
+            <div>
+                <!-- Slideout Menu-->
+                <div class="my-4 my-md-7 my-lg-10">
+                    <nav class="slideout-nav">
+                        <ul class="m-0 p-0 list-unstyled text-dark">
+                            <li class="slideout-navitem">
+                                <a class="slideout-navlink" href="../index.html" data-pixr-scrollto
+                                    data-target=".about">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="slideout-navitem">
+                                <a class="slideout-navlink" href.location="../projects/Main.html" data-pixr-scrollto
+                                    data-target=".portfolio">
+                                    My Portfolio
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /Slideout Menu-->
+
+                <!-- Slideout Contact-->
+                <div class="slideout-contact">
+                    <ul class="m-0 p-0 list-unstyled">
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="ri-mail-line me-3 text-primary"></i>
+                            <span>sohailturner@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /Slideout Contact-->
+            </div>
+        </div>
+        <!-- /Slideout Body-->
+    </div>
 
 </body>
 
