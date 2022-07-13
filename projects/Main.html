@@ -30,6 +30,7 @@
 
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="../assets/css/theme.bundle.css" />
+	<link rel="stylesheet" href="style.css" />
 
 	<noscript>
 		<style>
@@ -42,7 +43,20 @@
 		</style>
 	</noscript>
 </head>
+
 <body id="main-layout">
+	<div id="navbar">
+		<nav id="nav-wrap">
+			<a id="toggle btn" title="Menu" href="#">
+			</a>
+			<ul id="nav" class="nav mobile">
+				<li><a href="../index.html">HOME</a></li>
+				<li><a href="../projects/Main.html">PORTFOILIO</a></li>
+				<!-- <li><a href="../contact/index.html">CONTACT ME</a></li> -->
+				<li><a target="_blank" href="../assets/images/media/Sohail CV.pdf">CV</a></li>
+			</ul>
+		</nav>
+	</div>
 	<section id="home" class="hometype">
 		<div class="container-fluid">
 			<div class="row d_flex">
@@ -64,28 +78,47 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-6 col-md-4" style="float: left;">
-					<h3>Masters Dissertation</h3>
-					</p>
+				<div class="col-6 col-md-4 column" style="float: left; width: 100%;">
+					<h3 style="text-align: center">Masters Dissertation</h3>
 					<a href="MSc Diss.html"><img
 							src="../assets/images/media/CA with Flood fill and Marching Squares.PNG"
 							alt="GitHub Icon3.jpg" /></a>
 				</div>
-				<div class="col-6 col-md-4">
+				<div class="col-6 col-md-4 column" style="width: 100%;">
 					<h3>Advanced Rendering</h3>
 					<a href="Advanced Rendering.html"><img src="../assets/images/media/RayTraceSphere.png"
 							alt="GitHub Icon3.jpg" />
 					</a>
 				</div>
-				<div class="col-6 col-md-4">
+				<div class="col-6 col-md-4 column" style="float: right;width: 100%; ">
 					<h3>C++ Programming and Design/Real Time graphics</h3>
 					<a href="C++ Graphics.html">
 						<img src="../assets/images/media/C++GraphicsVirtual.PNG" alt="GitHub Icon3.jpg" /></a>
 				</div>
 			</div> <!-- end process -->
-			<h1>Secondary Pieces</h1>
-			<hr>
+			<!-- <h1>Secondary Pieces</h1>
+			<hr> -->
 		</div>
+		<style>
+			/* .container img {
+				height: auto;
+				width: fit-content;
+				margin: auto;
+			} */
+
+			.column {
+				float: left;
+				width: 33.33%;
+				padding: 5px;
+			}
+
+			/* Clear floats after image containers */
+			.row::after {
+				content: "";
+				clear: both;
+				display: table;
+			}
+		</style>
 	</section>
 	<div class="slideout text-dark">
 
