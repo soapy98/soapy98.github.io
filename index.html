@@ -25,7 +25,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=Homemade+Apple&display=swap"
         rel="stylesheet">
-        <script src="https://kit.fontawesome.com/90d8e3a327.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/90d8e3a327.js" crossorigin="anonymous"></script>
     <!-- Vendor CSS -->
     <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
 
@@ -40,6 +40,38 @@
           */
             .simplebar-content-wrapper {
                 overflow: auto;
+            }
+
+            .portfolio-listing {
+                display: flex;
+                flex-direction: column;
+                /* Stack rows vertically */
+                gap: 16px;
+                /* Space between rows */
+            }
+
+            .portfolio-row {
+                display: flex;
+                gap: 16px;
+                /* Space between items in the same row */
+            }
+
+            .portfolio-item {
+                flex: 1;
+                /* Allow items to grow equally within their row */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                box-sizing: border-box;
+                /* Ensure padding and border are included in the width and height */
+            }
+
+            .img-large {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                /* Ensure the image covers the container while preserving aspect ratio */
             }
         </style>
     </noscript>
@@ -324,7 +356,8 @@
         <!-- / About-->
         <div class="row g-5 about py-5">
             <div class="col-12 col-xl-6" data-aos="reveal-left">
-                <h3 class="display-5">Software Developer who specialises in games but also intrigued by all things technology.</h3>
+                <h3 class="display-5">Software Developer who specialises in games but also intrigued by all things
+                    technology.</h3>
             </div>
         </div> <!-- / About-->
         <!-- / About-->
@@ -334,20 +367,30 @@
             </div>
             <div class="col-12 col-xl-6 opacity-90" data-aos="reveal-right" data-aos-delay="250">
                 <h3>C++ Games Developer, Born in A Storm</h3>
-                <p>In my current role, I developed a data management system within Unreal Engine to handle dynamic application states, ensuring data consistency and synchronisation across networked clients.
-                    I designed an event-driven system for real-time updates and smooth state transitions using delegates and asynchronous programming. 
-                    Collaborating with designers, front-end developers, and network engineers, I integrated these systems to create a cohesive user experience. 
-                    I also applied optimisation techniques, such as memory management, multi-threading, and concurrency, to ensure optimal performance and scalability while diagnosing and resolving technical issues. </div>
+                <p>In my current role, I developed a data management system within Unreal Engine to handle dynamic
+                    application states, ensuring data consistency and synchronisation across networked clients.
+                    I designed an event-driven system for real-time updates and smooth state transitions using delegates
+                    and asynchronous programming.
+                    Collaborating with designers, front-end developers, and network engineers, I integrated these
+                    systems to create a cohesive user experience.
+                    I also applied optimisation techniques, such as memory management, multi-threading, and concurrency,
+                    to ensure optimal performance and scalability while diagnosing and resolving technical issues.
+            </div>
             <div class="col-12 col-xl-6 opacity-90" data-aos="reveal-right" data-aos-delay="250">
                 <h3>Tech Analyst, Eversheds and Sutherland via Grayce</h3>
-                <p> As a Tech Analyst, I implemented automated workflows with Power Automate to streamline ETL processes for internal and external systems via APIs. 
-                    I integrated Power Apps and Power Automate with existing systems, enabling the use of RESTful APIs and SQL/NoSQL for improved data flow and real-time synchronisation. 
-                    I provided training and support for users on Power Apps and Power Automate, focusing on API usage for automation and data management. 
-                    My role involved working closely with stakeholders to optimise business processes, leveraging Power Platform tools to implement API integrations that reduced costs and increased efficiency.</div>
+                <p> As a Tech Analyst, I implemented automated workflows with Power Automate to streamline ETL processes
+                    for internal and external systems via APIs.
+                    I integrated Power Apps and Power Automate with existing systems, enabling the use of RESTful APIs
+                    and SQL/NoSQL for improved data flow and real-time synchronisation.
+                    I provided training and support for users on Power Apps and Power Automate, focusing on API usage
+                    for automation and data management.
+                    My role involved working closely with stakeholders to optimise business processes, leveraging Power
+                    Platform tools to implement API integrations that reduced costs and increased efficiency.
+            </div>
             <div class="col-12 col-xl-6 opacity-90" data-aos="reveal-right" data-aos-delay="250">
                 <h3>Web Developer, House In UK</h3>
-                <p> In this role, I customized web pages across the business to enhance speed and functionality. 
-                    I developed JavaScript scripts to add new features, including a Rent-to-Own calculator, 
+                <p> In this role, I customized web pages across the business to enhance speed and functionality.
+                    I developed JavaScript scripts to add new features, including a Rent-to-Own calculator,
                     which improved user interaction and business utility. </p>
             </div>
         </div> <!-- / About-->
@@ -357,9 +400,12 @@
             </div>
             <div class="col-12 col-xl-6 opacity-90" data-aos="reveal-right" data-aos-delay="250">
                 <h3>Automated Influencer Bot</h3>
-                <p> I created an automated workflow using Power Automate to identify influencers based on specified input parameters. 
-                    The system leverages REST APIs to push identified influencer data to Google Sheets, facilitating seamless data integration and management. 
-                    Additionally, I incorporated OAuth authentication to enable access control across multiple sites, specifically for Power Apps using Azure Active Directory and Google API endpoints.</p>
+                <p> I created an automated workflow using Power Automate to identify influencers based on specified
+                    input parameters.
+                    The system leverages REST APIs to push identified influencer data to Google Sheets, facilitating
+                    seamless data integration and management.
+                    Additionally, I incorporated OAuth authentication to enable access control across multiple sites,
+                    specifically for Power Apps using Azure Active Directory and Google API endpoints.</p>
             </div>
         </div> <!-- / About-->
         <div class="row g-5 education py-5" id="education">
@@ -368,130 +414,87 @@
             </div>
             <div class="col-12 col-xl-6 opacity-90" data-aos="reveal-right" data-aos-delay="250">
                 <h3>University of Hull BSc</h3>
-                <p> I graduated from the University of Hull with a 2:1 in Computer Science with Games Development. 
-                    During this course, I gained experience with several programming languages, including C#, C++, and HLSL, with a strong focus on Object-Oriented Programming. 
-                    As part of my Bachelor's degree, I had the opportunity to spend a year abroad, which I chose to spend in Osnabrück, Germany. 
-                    Alongside my studies, I was actively involved in my university's Ultimate Frisbee club. In my final year, I served as the President of the club, where my responsibilities included being the main point of contact between the Students' Union and the club, helping to organise events, and ensuring that every member felt included.</p>
+                <p> I graduated from the University of Hull with a 2:1 in Computer Science with Games Development.
+                    During this course, I gained experience with several programming languages, including C#, C++, and
+                    HLSL, with a strong focus on Object-Oriented Programming.
+                    As part of my Bachelor's degree, I had the opportunity to spend a year abroad, which I chose to
+                    spend in Osnabrück, Germany.
+                    Alongside my studies, I was actively involved in my university's Ultimate Frisbee club. In my final
+                    year, I served as the President of the club, where my responsibilities included being the main point
+                    of contact between the Students' Union and the club, helping to organise events, and ensuring that
+                    every member felt included.</p>
             </div>
             <div class="col-12 col-xl-6 opacity-90" data-aos="reveal-right" data-aos-delay="250">
                 <h3>University of Hull MSc</h3>
-                <p> Graduated from the University of Hull with a Merit in Computer Science with Games Development. 
-                    This course focused on teaching and providing opportunities to learn about various aspects of game development. 
-                    It included learning about current GPU technologies, such as tessellation, and modern graphics libraries like DirectX and OpenGL. 
-                    Another key focus was on C++ programming and the creation of optimised applications, including processes such as threading. 
-                    As part of my Master’s programme, I completed a module that required working within an Agile framework as part of a team. 
-                    To complete the Master's degree, I undertook a project and wrote a dissertation, achieving a Merit in this assignment. 
-                    For the project, I decided to create a VR tank game that featured procedural generation, ray tracing, and networking. 
-                    This project was a significant undertaking but offered numerous benefits, such as enhancing my time management skills for large projects and improving my ability to handle projects independently. </div>
+                <p> Graduated from the University of Hull with a Merit in Computer Science with Games Development.
+                    This course focused on teaching and providing opportunities to learn about various aspects of game
+                    development.
+                    It included learning about current GPU technologies, such as tessellation, and modern graphics
+                    libraries like DirectX and OpenGL.
+                    Another key focus was on C++ programming and the creation of optimised applications, including
+                    processes such as threading.
+                    As part of my Master’s programme, I completed a module that required working within an Agile
+                    framework as part of a team.
+                    To complete the Master's degree, I undertook a project and wrote a dissertation, achieving a Merit
+                    in this assignment.
+                    For the project, I decided to create a VR tank game that featured procedural generation, ray
+                    tracing, and networking.
+                    This project was a significant undertaking but offered numerous benefits, such as enhancing my time
+                    management skills for large projects and improving my ability to handle projects independently.
+            </div>
         </div> <!-- / About-->
         <!-- My Portfolio-->
-        <div class="py-8 portfolio">
-            <div class="mb-6 py-2" data-aos="reveal-right">
-                <h3 class="display-3 lh-1"><span class="font-script d-block text-danger display-6 lh-1 ps-1">My</span>
-                    Portfolio</h3>
-                <div class="f-w-52 text-warning">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 12.32">
-                        <path
-                            d="M170,1.88c-18.36-.72-17,8.73-33.3,8.7-17.86,0-26.63-8.43-43.12-10.2C76.84-1.43,66.44,3.69,56.44,6.89,39.25,12.37,10.14,9.6,2.68,1.11,2.16.53-.38.67.05,1.27,3.88,6.63,17.5,10.92,33.64,11.32a85.71,85.71,0,0,0,21.53-2c8.11-1.93,13.35-5,22-6.67,20.93-4,33,5.93,50,8.77,7.09,1.17,14.78,1.25,20.59-.37,6.49-1.8,8.31-5,15.08-6.66C173.06,1.89,181.43,7,190,8.59a68.55,68.55,0,0,0,24.63-.06c3.13-.63.13-2.5-2.92-1.83A52.54,52.54,0,0,1,185.8,5.27C181.17,3.83,176.38,2.14,170,1.88Z"
-                            fill="currentColor" />
-                    </svg>
-                </div>
-                <div class="f-w-52 text-warning">
-                    <div class="titlepage">
-                        <button onclick="location.href='projects/Main.html'">Click to view portfolio</button>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-listing">
+        <div class="portfolio-listing">
+            <!-- Row 1 -->
+            <div class="portfolio-col">
+                <!-- Portfolio Item 1 -->
                 <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal"
-                    data-portfolio-img="./assets/images/media/Advanced.png"
-                    data-portfolio-title="Advanced Rendering - Genesis Animation"
-                    data-portfolio-description="Project undertaken to show our understanding of programming to the GPU through using HLSL"
-                    data-portfolio-client="Advanced Rendering" data-portfolio-category="Genesis Animation"
-                    data-portfolio-work="work">
-                    <picture class="d-block" data-aos="reveal-left">
-                        <a target="_blank"><img href="https://github.com/soapy98/WorkingGenesis/"
-                                src="./assets/images/media/Advanced.png"></a>
-                    </picture>
-                </div>
-                <div class=" portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal"
                     data-portfolio-img="./assets/images/media/RayTraceSphere.png"
-                    data-portfolio-title="Ray Tracing - Sphere  &amp; Cube"
-                    data-portfolio-description=" Implicit Spheres with reflective surfaces and shadows. Showing understanding of implementing ray-tracing and collision detection for Sphere  &amp; Cube."
+                    data-portfolio-title="Ray Tracing - Sphere &amp; Cube"
+                    data-portfolio-description="Implicit Spheres with reflective surfaces and shadows. Showing understanding of implementing ray-tracing and collision detection for Sphere &amp; Cube."
                     data-portfolio-client="Advanced Rendering" data-portfolio-date=""
                     data-portfolio-category="Genesis Animation">
                     <picture class="d-block" data-aos="reveal-left">
-                        <img class="img-fluid" src="./assets/images/media/RayTraceSphere.png" alt="">
-                    </picture>
-                </div>
-                <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal"
-                    data-portfolio-img="./assets/images/media/C++GraphicsVirtual.PNG" data-portfolio-title="Transparent"
-                    data-portfolio-description="Transparent effect applied onto the model."
-                    data-portfolio-client="C++ Programming and Design &amp; Real Time Graphics" data-portfolio-date=""
-                    data-portfolio-category="Virtual Gallery">
-                    <picture class="d-block" data-aos="reveal-left">
-                        <img class="img-fluid" src="./assets/images/media/C++GraphicsVirtual.PNG" alt="">
-                    </picture>
-                </div>
-                <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal"
-                    data-portfolio-img="./assets/images/media/Tesselated Sphere with Phong.PNG"
-                    data-portfolio-title="Procedurally Generated Sphere"
-                    data-portfolio-description="Sphere created by applying a Sphereical parametric function to a each Cube vertex. A Phong shader was used to give the sphere a realistic appearance."
-                    data-portfolio-client="C++ Programming and Design &amp; Real Time Graphics" data-portfolio-date=""
-                    data-portfolio-category="Virtual Gallery">
-                    <picture class="d-block" data-aos="reveal-left">
-                        <img class="img-fluid" src="./assets/images/media/Tesselated Sphere with Phong.PNG" alt="">
+                        <img class="img-fluid img-large" src="./assets/images/media/RayTraceSphere.png" alt="">
                     </picture>
                 </div>
                 <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal"
                     data-portfolio-img="./assets/images/media/Teapot.png"
-                    data-portfolio-title="Old Teapot Renderered in DirectX" data-portfolio-description=""
+                    data-portfolio-title="Old Teapot Rendered in DirectX" data-portfolio-description=""
                     data-portfolio-client="Advanced Rendering" data-portfolio-date=""
                     data-portfolio-category="Genesis Animation">
                     <picture class="d-block" data-aos="reveal-left">
-                        <img class="img-fluid" src="./assets/images/media/Teapot.png" alt="">
+                        <img class="img-fluid img-large" src="./assets/images/media/Teapot.png" alt="">
                     </picture>
                 </div>
+                <!-- Portfolio Item 2 -->
+
+
+                <!-- Row 2 -->
+                <!-- Portfolio Item 3 -->
                 <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal"
                     data-portfolio-img="./assets/images/media/CA wihtout flood fill.PNG"
                     data-portfolio-title="Procedurally Generated Maze with Steep Parallax shader applied."
-                    data-portfolio-description="Maze procedurally generated using 3 algorithms. Cellular Automata used to a generate 2D Maze. Flood Fill used for a more organized Maze. Marching Squares used to polygonize and turn the Maze from 2D to 3D "
-                    data-portfolio-client="Masters Disseration" data-portfolio-date="" data-portfolio-category="Maze">
+                    data-portfolio-description="Maze procedurally generated using 3 algorithms. Cellular Automata used to generate 2D Maze. Flood Fill used for a more organized Maze. Marching Squares used to polygonize and turn the Maze from 2D to 3D."
+                    data-portfolio-client="Masters Dissertation" data-portfolio-date="" data-portfolio-category="Maze">
                     <picture class="d-block" data-aos="reveal-left">
-                        <img class="img-fluid" src="./assets/images/media/CA wihtout flood fill.PNG" alt="">
+                        <img class="img-fluid img-large" src="./assets/images/media/Resized CA wihtout flood.png"
+                            alt="">
                     </picture>
                 </div>
-                <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal"
-                    data-portfolio-img="./assets/images/media/SphereCamSphere.png" data-portfolio-title="Sphere "
-                    data-portfolio-description="Key Controlled and View Distance Controlled Spherical Tessellation."
-                    data-portfolio-client="Advanced Rendering" data-portfolio-date=""
-                    data-portfolio-category="Genesis Animation">
-                    <picture class="d-block" data-aos="reveal-left">
-                        <img class="img-fluid" src="./assets/images/media/SphereCamSphere.png" alt="">
-                    </picture>
-                </div>
+
+                <!-- Portfolio Item 4 -->
                 <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal"
                     data-portfolio-img="./assets/images/media/Steep Parallax.PNG"
                     data-portfolio-title="Parallax Mapping applied onto Procedurally Generated Maze."
                     data-portfolio-description="A shading technique which creates a realistic bumpiness effect. It is an enhancement on the bump mapping techniques as it uses Ray-Tracing to convey a sense of depth."
-                    data-portfolio-client="Masters Disseration" data-portfolio-date="" data-portfolio-category="">
+                    data-portfolio-client="Masters Dissertation" data-portfolio-date="" data-portfolio-category="">
                     <picture class="d-block" data-aos="reveal-left">
-                        <img class="img-fluid" src="./assets/images/media/Steep Parallax.PNG" alt="">
-                    </picture>
-                </div>
-                <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal"
-                    data-portfolio-img="./assets/images/media/RayMarch Terrain.png"
-                    data-portfolio-title="Ray-Marched Terrain"
-                    data-portfolio-description="Terrain created using ray-marching algorithm alongside using a Perlin Noise function to create a displacement on the Y."
-                    data-portfolio-client="Advanced Rendering" data-portfolio-date=""
-                    data-portfolio-category="Genesis Animation">
-                    <picture class="d-block" data-aos="reveal-left">
-                        <img class="img-fluid" src="./assets/images/media/RayMarch Terrain.png" alt="">
+                        <img class="img-fluid img-large" src="./assets/images/media/Steep Parallax.PNG" alt="">
                     </picture>
                 </div>
             </div>
-        </div> <!-- / My Portfolio-->
-
+        </div>
         <!-- Experience -->
         <!-- Skills Section-->
         <div class="py-8 skills">
